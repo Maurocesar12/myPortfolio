@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
+import pdf from '/public/MauroCésarGuimaraes.pdf';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -74,7 +75,12 @@ const Navigation = () => {
               <Button 
                 variant="outline" 
                 className="transition-colors duration-200 text-green hover:text-green btn-animated border-green hover:bg-green/10 focus:ring-green font-mono text-sm px-8 py-2 ml-4"
-                onClick={() => window.open('/resume.pdf', '_blank')}
+               onClick={() => {
+                const link = document.createElement('a')
+                link.href = pdf;
+                link.download ='MauroCésarGuimaraes.pdf'
+                link.click();
+              }}
                 aria-label="Baixar currículo em PDF"
               >
                 Currículo
@@ -129,7 +135,6 @@ const Navigation = () => {
             <Button 
               variant="outline" 
               className="btn-animated border-green text-green hover:bg-green/10 font-mono text-base px-8 py-3 mt-8"
-              onClick={() => window.open('/resume.pdf', '_blank')}
             >
               Currículo
             </Button>
