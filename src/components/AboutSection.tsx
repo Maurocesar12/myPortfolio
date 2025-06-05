@@ -13,11 +13,23 @@ const AboutSection = () => {
     'Python',
     'AWS',
     'Docker',
-    'Kubernetes',
-    'Terraform',
+    'PHP',
+    'JSON',
     'pfSense',
-    'Linux',
-    'PostgreSQL'
+    'Hyper-V',
+    'PostgreSQL',
+    'MySQL',
+    'FireBase',
+    'OneDrive',
+    'SharePoint',
+    'MICROSOFT 365',
+    'CloudFlare',
+    'DNS Manager',
+    'ZoneMider',
+    'HTML/CSS',
+    'GIT',
+    'GITHUB',
+    'Vercel'
   ];
 
   useEffect(() => {
@@ -39,7 +51,7 @@ const AboutSection = () => {
 
   return (
     <section 
-      id="about" 
+      id="about"
       ref={sectionRef}
       className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"
     >
@@ -52,23 +64,23 @@ const AboutSection = () => {
             <div className="space-y-4 text-slate text-base sm:text-lg leading-relaxed fade-in-left stagger-1">
               <p>
                 Olá! Meu nome é <span className="text-lightest-slate font-medium">Mauro César</span> e tenho paixão por criar soluções tecnológicas que fazem a diferença. 
-                Minha jornada na tecnologia começou em 2019, e desde então venho me especializando em 
-                <span className="text-green font-medium"> infraestrutura de nuvem</span> e 
-                <span className="text-green font-medium"> desenvolvimento de software</span>.
+                Minha jornada na tecnologia começou em 2015, quando eu decidi fazer um overclock no meu computador, e desde então venho me aprofudando cada vez mais em software, hardware e especializando em 
+                <span className="text-green font-medium"> Infraestrutura</span> e 
+                <span className="text-green font-medium"> Desenvolvimento De Software</span>.
               </p>
               
               <p>
-                Atualmente trabalho como <span className="text-green font-medium">Analista de Infraestrutura Pleno</span> na 
-                <span className="text-green font-medium"> Companhia de Processamento de Dados do Estado de Goiás (PRODAGO)</span>, 
+                Atualmente trabalho como <span className="text-green font-medium">Suporte de TI</span> na 
+                <span className="text-green font-medium"> Segna Consultoria em Seguros </span>, 
                 onde lidero projetos de migração para cloud, automação de processos e desenvolvimento de soluções web que impactam 
-                milhares de usuários diariamente.
+                milhares de usuários diariamente. Faço freelance em desenvolvimento de software, automações e criação de software empresarial.
               </p>
               
               <p>
-                Minha experiência inclui trabalhar com tecnologias modernas como AWS, React, Node.js e Python, 
+                Minha experiência inclui trabalhar com tecnologias modernas como Vercel, React, Node.js, Python, JavaScript, TypeScript 
                 sempre buscando as melhores práticas em <span className="text-green font-medium">DevOps</span> e 
                 <span className="text-green font-medium"> arquitetura de sistemas distribuídos</span>. 
-                Tenho particular interesse em automação, segurança e otimização de performance.
+                Tenho particular interesse em desenvolvimento web, automação, segurança e otimização de performance.
               </p>
               
               <p>
@@ -82,7 +94,7 @@ const AboutSection = () => {
                 {technologies.map((tech, index) => (
                   <div 
                     key={index} 
-                    className="flex items-center text-slate hover:text-green transition-colors duration-300 cursor-default"
+                    className="flex items-center text-slate hover:text-green transition-colors duration-400 cursor-default"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
                     <span className="text-green mr-3 text-xs">▹</span>
@@ -100,7 +112,7 @@ const AboutSection = () => {
               <div className="relative">
                 <div className="aspect-square w-full max-w-80 lg:max-w-full bg-green rounded-xl overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+                    src=""
                     alt="Mauro César Guimarães Santos Junior"
                     className="w-full h-full object-cover mix-blend-multiply filter grayscale transition-all duration-500 group-hover:filter-none group-hover:mix-blend-normal group-hover:scale-105"
                     loading="lazy"

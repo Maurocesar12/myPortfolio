@@ -135,6 +135,12 @@ const Navigation = () => {
             <Button 
               variant="outline" 
               className="btn-animated border-green text-green hover:bg-green/10 font-mono text-base px-8 py-3 mt-8"
+              onClick={() => {
+                const link = document.createElement('a')
+                link.href = pdf;
+                link.download ='MauroCésarGuimaraes.pdf'
+                link.click();
+              }}
             >
               Currículo
             </Button>
