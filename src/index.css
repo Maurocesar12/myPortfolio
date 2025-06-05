@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=SF+Mono:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  :root {
+    --background: 10 14 26;
+    --foreground: 204 214 246;
+
+    --card: 17 34 64;
+    --card-foreground: 204 214 246;
+
+    --popover: 17 34 64;
+    --popover-foreground: 204 214 246;
+
+    --primary: 100 255 218;
+    --primary-foreground: 10 14 26;
+
+    --secondary: 35 53 84;
+    --secondary-foreground: 204 214 246;
+
+    --muted: 35 53 84;
+    --muted-foreground: 136 146 176;
+
+    --accent: 35 53 84;
+    --accent-foreground: 204 214 246;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 35 53 84;
+    --input: 35 53 84;
+    --ring: 100 255 218;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 17 34 64;
+    --sidebar-foreground: 204 214 246;
+    --sidebar-primary: 100 255 218;
+    --sidebar-primary-foreground: 10 14 26;
+    --sidebar-accent: 35 53 84;
+    --sidebar-accent-foreground: 204 214 246;
+    --sidebar-border: 35 53 84;
+    --sidebar-ring: 100 255 218;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-dark-navy text-lightest-slate font-sans antialiased;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    counter-reset: section;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  }
+
+  .font-mono {
+    font-family: 'SF Mono', Monaco, Inconsolata, 'Roboto Mono', monospace;
+    font-feature-settings: 'ss01', 'ss02', 'ss03', 'ss04';
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-lightest-slate font-semibold;
+    line-height: 1.1;
+  }
+
+  section {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  .numbered-heading {
+    @apply flex items-center text-lightest-slate text-xl sm:text-2xl md:text-3xl font-semibold mb-8 md:mb-10 whitespace-nowrap;
+  }
+
+  .numbered-heading::before {
+    @apply font-mono text-green text-base sm:text-lg md:text-xl font-normal mr-3;
+    counter-increment: section;
+    content: "0" counter(section) ".";
+  }
+
+  .numbered-heading::after {
+    @apply ml-4 md:ml-5 h-px bg-lightest-navy flex-1 hidden sm:block;
+    content: "";
+  }
+
+  /* Advanced Button Animations */
+  .btn-animated {
+    @apply relative overflow-hidden transition-all duration-300 ease-out;
+    transform: translateZ(0);
+  }
+
+  .btn-animated::before {
+    @apply absolute inset-0 bg-green/10 scale-x-0 transition-transform duration-300 ease-out;
+    content: "";
+    transform-origin: left;
+  }
+
+  .btn-animated:hover::before {
+    @apply scale-x-100;
+  }
+
+  .btn-animated::after {
+    @apply absolute bottom-0 left-0 w-full h-0.5 bg-green scale-x-0 transition-transform duration-300 ease-out;
+    content: "";
+    transform-origin: left;
+  }
+
+  .btn-animated:hover::after {
+    @apply scale-x-100;
+  }
+
+  .btn-animated:hover {
+    @apply transform -translate-y-0.5 shadow-lg;
+  }
+
+  .btn-animated:active {
+    @apply transform translate-y-0;
+  }
+
+  /* Floating Animation */
+  .floating {
+    animation: floating 6s ease-in-out infinite;
+  }
+
+  @keyframes floating {
+    0%, 100% { transform: translate3d(0, 0, 0); }
+    50% { transform: translate3d(0, -10px, 0); }
+  }
+
+  /* Glow Effect */
+  .glow {
+    @apply relative;
+  }
+
+  .glow::before {
+    @apply absolute -inset-1 bg-gradient-to-r from-green/20 via-green/40 to-green/20 rounded-lg opacity-0 transition-opacity duration-300;
+    content: "";
+    filter: blur(8px);
+  }
+
+  .glow:hover::before {
+    @apply opacity-100;
+  }
+
+  /* Project Cards */
+  .project-card {
+    @apply relative bg-light-navy/50 backdrop-blur-sm p-6 rounded-xl transition-all duration-500 ease-out hover:transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-green/10;
+    border: 1px solid rgba(100, 255, 218, 0.1);
+  }
+
+  .project-card::before {
+    @apply absolute inset-0 bg-gradient-to-br from-green/5 via-transparent to-green/5 rounded-xl opacity-0 transition-opacity duration-300;
+    content: "";
+  }
+
+  .project-card:hover::before {
+    @apply opacity-100;
+  }
+
+  /* Skill Tags */
+  .skill-tag {
+    @apply inline-block bg-lightest-navy/80 text-green px-3 py-1.5 rounded-md text-sm font-mono mr-2 mb-2 transition-all duration-300 hover:bg-green/10 hover:shadow-md cursor-default;
+    border: 1px solid rgba(100, 255, 218, 0.2);
+  }
+
+  /* Hover Underline Effect */
+  .hover-underline {
+    @apply relative;
+  }
+
+  .hover-underline::after {
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-green transition-all duration-300 ease-out;
+    content: "";
+  }
+
+  .hover-underline:hover::after {
+    @apply w-full;
+  }
+
+  /* Fade In Animations */
+  .fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  .fade-in-left {
+    animation: fadeInLeft 0.8s ease-out forwards;
+  }
+
+  .fade-in-right {
+    animation: fadeInRight 0.8s ease-out forwards;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 40px, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translate3d(-40px, 0, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translate3d(40px, 0, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  /* Staggered animations */
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+  .stagger-5 { animation-delay: 0.5s; }
+
+  /* Accessibility improvements */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  /* Focus styles for accessibility */
+  button:focus-visible,
+  a:focus-visible,
+  [tabindex]:focus-visible {
+    @apply outline-2 outline-offset-2 outline-green;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-dark-navy;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-lightest-navy rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-slate;
+  }
+}
