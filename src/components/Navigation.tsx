@@ -96,9 +96,9 @@ const Navigation = () => {
                 aria-expanded={isMobileMenuOpen}
               >
                 <div className="w-6 h-6 relative">
-                  <span className={`absolute left-0 top-1 w-6 h-0.5 bg-current transition-all duration-300 ${isMobileMenuOpen ? 'rotate-45 top-2.5' : ''}`}></span>
+                  <span className={`absolute left-0 top-1 w-6 h-0.5 bg-current transition-all duration-300 ${isMobileMenuOpen ? 'rotate-45 top-0.5' : ''}`}></span>
                   <span className={`absolute left-0 top-2.5 w-6 h-0.5 bg-current transition-all duration-300 ${isMobileMenuOpen ? 'opacity-0' : ''}`}></span>
-                  <span className={`absolute left-0 top-4 w-6 h-0.5 bg-current transition-all duration-300 ${isMobileMenuOpen ? '-rotate-45 top-2.5' : ''}`}></span>
+                  <span className={`absolute left-0 top-4 w-6 h-0.5 bg-current transition-all duration-300 ${isMobileMenuOpen ? '-rotate-45 top-0.5' : ''}`}></span>
                 </div>
               </button>
             </div>
@@ -134,7 +134,7 @@ const Navigation = () => {
             
             <Button 
               variant="outline" 
-              className="btn-animated border-green text-green hover:bg-green/10 font-mono text-base px-8 py-3 mt-8"
+              className="btn-animated border-green text-green hover:text-green hover:bg-green/10 font-mono text-base px-8 py-3 mt-8"
               onClick={() => {
                 const link = document.createElement('a')
                 link.href = pdf;
