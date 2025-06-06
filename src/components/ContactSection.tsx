@@ -15,23 +15,23 @@ const ContactSection = () => {
         </h3>
         
         <p className="text-lg text-slate leading-relaxed mb-12">
-          Estou sempre aberto a novas oportunidades e projetos interessantes. 
-          Se você tem uma ideia inovadora, precisa de consultoria em cloud ou 
-          simplesmente quer trocar uma ideia sobre tecnologia, minha caixa de entrada 
+          Estou sempre aberto a novas oportunidades e projetos interessantes.
+          Se você tem uma ideia inovadora, precisa de desenvolvimento web ou
+          simplesmente quer trocar uma ideia sobre tecnologia, minha caixa de entrada
           está sempre aberta. Vou fazer o meu melhor para responder!
         </p>
         
         <Button 
           variant="outline" 
-          className="border-green text-green hover:bg-green/10 font-mono text-lg px-8 py-6 h-auto mb-16"
-          onClick={() => window.open('mailto:mauro@example.com', '_blank')}
+          className="border-green text-green hover:text-green hover:bg-green/20 font-mono text-lg px-8 py-6 h-auto mb-16"
+          onClick={() => window.open('mailto:mauroguima080@hotmail.com', '_blank')}
         >
           Diga olá!
         </Button>
         
         <div className="flex justify-center space-x-6 mb-16">
           <a 
-            href="https://github.com/maurocesar" 
+            href="https://github.com/maurocesar12" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-slate hover:text-green transition-colors duration-200"
@@ -42,7 +42,7 @@ const ContactSection = () => {
           </a>
           
           <a 
-            href="https://linkedin.com/in/mauro-cesar" 
+            href="https://www.linkedin.com/in/mauro-c%C3%A9sar-guimaraes-santos-junior-b9638b203/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-slate hover:text-green transition-colors duration-200"
@@ -53,7 +53,7 @@ const ContactSection = () => {
           </a>
           
           <a 
-            href="mailto:mauro@example.com" 
+            href="mailto:mauroguima080@hotmail.com" 
             className="text-slate hover:text-green transition-colors duration-200"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

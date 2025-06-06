@@ -4,15 +4,17 @@ import React from 'react';
 const SkillsSection = () => {
   const skillCategories = [
     {
-      title: 'Cloud & Infrastructure',
+      title: 'Infrastructure & Cloud',
       skills: [
         'Amazon Web Services (AWS)',
         'Microsoft Azure',
         'Google Cloud Platform',
-        'Docker & Kubernetes',
-        'Terraform',
-        'Ansible',
+        'Microsoft 365',
+        'SharePoint',
+        'OneDrive',
+        'CloudFlare',
         'Linux Administration',
+        'Windows Manager',
         'pfSense',
         'VMware'
       ]
@@ -34,15 +36,13 @@ const SkillsSection = () => {
     {
       title: 'DevOps & Tools',
       skills: [
-        'Jenkins',
         'GitLab CI/CD',
         'GitHub Actions',
-        'Prometheus',
+        'GIT',
         'Grafana',
-        'ELK Stack',
-        'Nginx',
-        'Apache',
-        'Shell Scripting'
+        'Apache'
+
+
       ]
     },
     {
@@ -99,13 +99,22 @@ const SkillsSection = () => {
           
           <div className="flex flex-wrap justify-center gap-4">
             <div className="bg-lightest-navy px-4 py-2 rounded-lg">
-              <span className="text-green font-mono text-sm">AWS Solutions Architect</span>
+              <span className="text-green font-mono text-sm">JavaScript Developer</span>
             </div>
             <div className="bg-lightest-navy px-4 py-2 rounded-lg">
-              <span className="text-green font-mono text-sm">Kubernetes Administrator</span>
+              <span className="text-green font-mono text-sm">Node.JS Fundamentals</span>
             </div>
             <div className="bg-lightest-navy px-4 py-2 rounded-lg">
               <span className="text-green font-mono text-sm">Azure Fundamentals</span>
+            </div>
+            <div className="bg-lightest-navy px-4 py-2 rounded-lg">
+              <span className="text-green font-mono text-sm">HTML/CSS Web Developer</span>
+            </div>
+            <div className="bg-lightest-navy px-4 py-2 rounded-lg">
+              <span className="text-green font-mono text-sm">React Fundamentals</span>
+            </div>
+             <div className="bg-lightest-navy px-4 py-2 rounded-lg">
+              <span className="text-green font-mono text-sm">Cybersecurity Specialist</span>
             </div>
           </div>
         </div>

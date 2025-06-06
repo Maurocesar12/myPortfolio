@@ -6,41 +6,34 @@ const ExperienceSection = () => {
 
   const experiences = [
     {
-      company: 'PRODAGO',
-      position: 'Analista de Infraestrutura Pleno',
-      period: 'Janeiro 2023 - Presente',
+      company: 'Segna Consultoria',
+      position: 'Suporte De TI',
+      period: 'Fevereiro 2024 - Presente',
       responsibilities: [
-        'Liderança de projetos de migração para AWS, resultando em 30% de redução de custos operacionais',
-        'Implementação de pipelines CI/CD com Jenkins e GitLab, automatizando deploys em 95%',
-        'Desenvolvimento de soluções em Python e React para automação de processos internos',
-        'Gerenciamento de infraestrutura como código usando Terraform e CloudFormation',
-        'Monitoramento e otimização de performance de aplicações em ambiente cloud'
+        'Suporte ao usuário e otimização de tecnologias para a empresa',
+        'Configuração de câmeras IP, DVRs/NVRs, e adequação da infraestrutura de rede (endereçamento IP, VLANs, switches PoE, acesso remoto).',
+        'Desenvolvimento, personalização e manutenção de sites institucionais com WordPress, incluindo temas, plugins e otimização de desempenho',
+        'Gerenciamento de infraestrutura com Hyper-V e DNS Manager seguindo práticas de IaC',
+        'Implementação de políticas e protocolos de segurança web',
+        'Aplicação de medidas preventivas contra ataques cibernéticos, como cloudflare, firewall e controle de acesso.',
+        'Ajustes e personalização de aplicações corporativas (como ERPs, CRMs e sistemas legados), visando melhor performance, usabilidade e integração com o ambiente de TI.',
+        'Diagnóstico e correção de falhas em hardware corporativo, com foco em manutenção preventiva e substituição de componentes',
       ]
     },
     {
       company: 'Freelancer',
       position: 'Desenvolvedor Full Stack',
-      period: 'Março 2021 - Dezembro 2022',
+      period: 'Março 2024 - Fevereiro 2025',
       responsibilities: [
-        'Desenvolvimento de aplicações web completas usando React, Node.js e PostgreSQL',
+        'Desenvolvimento de aplicações web completas usando TypeScript, JavaScript, HTML/CSS, React, PHP, WordPress',
         'Criação de APIs RESTful e integração com serviços de terceiros',
         'Implementação de sistemas de autenticação e autorização',
-        'Deploy e manutenção de aplicações em serviços cloud (AWS, Heroku)',
-        'Consultoria em arquitetura de software e boas práticas de desenvolvimento'
+        'Deploy e manutenção de aplicações em serviços cloud (Vercel, AWS)',
+        'Consultoria em arquitetura de software e boas práticas de desenvolvimento',
+        'Aprimoramento de consultas e estrutura em banco de dados SQL para ganho de performance',
+        'Análise de desempenho da aplicação web visando otimização'
       ]
-    },
-    {
-      company: 'Tech Solutions',
-      position: 'Suporte Técnico',
-      period: 'Janeiro 2020 - Fevereiro 2021',
-      responsibilities: [
-        'Suporte técnico especializado em infraestrutura de rede e sistemas',
-        'Configuração e manutenção de firewalls pfSense e equipamentos de rede',
-        'Resolução de incidentes críticos com SLA de 99.5% de disponibilidade',
-        'Documentação técnica e treinamento de usuários finais',
-        'Automação de tarefas repetitivas usando scripts Python e Bash'
-      ]
-    }
+    } 
   ];
 
   return (

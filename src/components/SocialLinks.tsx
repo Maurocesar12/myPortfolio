@@ -8,7 +8,7 @@ const SocialLinks = () => {
       <div className="fixed left-0 bottom-0 z-40 hidden lg:block">
         <div className="flex flex-col items-center space-y-6 p-6">
           <a 
-            href="https://github.com/maurocesar" 
+            href="https://github.com/Maurocesar12" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-slate hover:text-green hover:-translate-y-1 transition-all duration-200"
@@ -19,7 +19,7 @@ const SocialLinks = () => {
           </a>
           
           <a 
-            href="https://linkedin.com/in/mauro-cesar" 
+            href="https://www.linkedin.com/in/mauro-c%C3%A9sar-guimaraes-santos-junior-b9638b203/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-slate hover:text-green hover:-translate-y-1 transition-all duration-200"
@@ -30,7 +30,7 @@ const SocialLinks = () => {
           </a>
           
           <a 
-            href="mailto:mauro@example.com" 
+            href="mailto:mauroguima080@hotmail.com" 
             className="text-slate hover:text-green hover:-translate-y-1 transition-all duration-200"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -46,11 +46,11 @@ const SocialLinks = () => {
       <div className="fixed right-0 bottom-0 z-40 hidden lg:block">
         <div className="flex flex-col items-center space-y-6 p-6">
           <a 
-            href="mailto:mauro@example.com" 
+            href="mailto:mauroguima080@hotmail.com" 
             className="text-slate hover:text-green hover:-translate-y-1 transition-all duration-200 font-mono text-sm tracking-widest"
             style={{ writingMode: 'vertical-lr' }}
           >
-            mauro@example.com
+            mauroguima080@hotmail.com
           </a>
           
           <div className="w-px h-24 bg-slate"></div>

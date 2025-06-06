@@ -8,29 +8,29 @@ const ProjectsSection = () => {
 
   const projects = [
     {
-      title: 'Cloud Migration Platform',
-      description: 'Plataforma completa para migração de aplicações legacy para AWS, incluindo análise automatizada de dependências, estimativa inteligente de custos e automação completa do processo de migração com zero downtime.',
-      technologies: ['React', 'TypeScript', 'Node.js', 'AWS', 'Terraform', 'PostgreSQL', 'Docker'],
-      github: 'https://github.com/maurocesar',
-      demo: 'https://cloud-migration-demo.com',
+      title: 'Integrated Chat Bot AI',
+      description: 'Chatbot para WhatsApp com inteligência artificial, feito em Node.js. Ele usa OpenAI (GPT) ou Google Gemini para responder automaticamente mensagens de amigos, colegas ou transformar uma assistente virtual para sua empresa.',
+      technologies: ['JavaScript', 'TypeScript', 'Node.js', 'WpConnect',],
+      github: 'https://github.com/Maurocesar12/ChatBot-integrando-com-IA',
+      demo: '',
       image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop',
       featured: true
     },
     {
-      title: 'Infrastructure Monitoring Dashboard',
-      description: 'Dashboard em tempo real para monitoramento de infraestrutura multicloud, com alertas personalizados, métricas de performance avançadas e integração com principais provedores de cloud.',
-      technologies: ['React', 'Python', 'AWS CloudWatch', 'Grafana', 'Docker', 'Redis', 'WebSocket'],
-      github: 'https://github.com/maurocesar',
-      demo: 'https://monitoring-dashboard-demo.com',
+      title: 'Email classifier',
+      description: 'Projeto web que classifica e-mails como produtivos ou improdutivos e sugere respostas automáticas usando IA generativa. Interface simples, suporte a .txt, .pdf e texto direto, com deploy na nuvem.',
+      technologies: ['Python', 'BootStrap 5', 'Google Gemini', 'NLTK+Regex', 'PymuPDF','Render'],
+      github: 'https://github.com/Maurocesar12/CasePratico',
+      demo: 'https://casepratico.onrender.com/',
       image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop',
       featured: true
     },
     {
-      title: 'DevOps Automation Suite',
-      description: 'Conjunto abrangente de ferramentas para automação de pipelines CI/CD, deployment automático e gerenciamento inteligente de configurações de ambiente com rollback automático.',
-      technologies: ['Python', 'Jenkins', 'Kubernetes', 'Ansible', 'GitLab', 'Helm', 'Prometheus'],
-      github: 'https://github.com/maurocesar',
-      demo: 'https://devops-suite-demo.com',
+      title: 'LandinPage for marketing professionals ',
+      description: 'Landing page criada para destacar o trabalho de uma profissional de marketing. Moderna, responsiva e feita com tecnologias como React, TypeScript e Tailwind, unindo design e performance em um só lugar.',
+      technologies: ['React', 'TypeScript', 'TalwindCSS', 'Vite', 'Vercel', 'JavaScript'],
+      github: 'https://github.com/Maurocesar12/marketing-muse-landing-main',
+      demo: 'https://glendacarvalho.com.br/',
       image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop',
       featured: true
     }
@@ -178,8 +178,8 @@ const ProjectsSection = () => {
         <div className="text-center mt-16 lg:mt-20 fade-in-up stagger-4">
           <Button 
             variant="outline" 
-            className="btn-animated border-green text-green hover:bg-green/10 font-mono text-base px-8 py-4 h-auto"
-            onClick={() => window.open('https://github.com/maurocesar', '_blank')}
+            className="btn-animated border-green text-green hover:text-green hover:bg-green/20 font-mono text-base px-8 py-4 h-auto"
+            onClick={() => window.open('https://github.com/maurocesar12', '_blank')}
             aria-label="Ver todos os projetos no GitHub"
           >
             Ver todos os projetos
