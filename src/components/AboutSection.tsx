@@ -1,5 +1,6 @@
 
 import React, { useEffect, useRef, useState } from 'react';
+import img from './image/image-perfil.webp'
 
 const AboutSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -112,7 +113,7 @@ const AboutSection = () => {
               <div className="relative">
                 <div className="aspect-square w-full max-w-80 lg:max-w-full bg-green rounded-xl overflow-hidden">
                   <img 
-                    src=""
+                    src={img}
                     alt="Mauro César Guimarães Santos Junior"
                     className="w-full h-full object-cover mix-blend-multiply filter grayscale transition-all duration-500 group-hover:filter-none group-hover:mix-blend-normal group-hover:scale-105"
                     loading="lazy"
