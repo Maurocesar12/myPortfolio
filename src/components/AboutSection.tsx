@@ -115,7 +115,7 @@ const AboutSection = () => {
                   <img 
                     src={img}
                     alt="Mauro César Guimarães Santos Junior"
-                    className="w-full h-full object-cover mix-blend-multiply filter grayscale transition-all duration-500 group-hover:filter-none group-hover:mix-blend-normal group-hover:scale-105"
+                    className="w-full h-full object-cover mix-blend-multiply filter grayscale transition-all duration-500 group-hover:filter-none group-hover:mix-blend-normal group-hover:scale-100"
                     loading="lazy"
                   />
                 </div>
