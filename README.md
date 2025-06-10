@@ -64,8 +64,8 @@ Mauro César Guimarães Santos Junior
 | 👨‍💻 Dev Fullstack
 | 🚀 Apaixonado por tecnologia
 
--> Mauroguima080@hotmail.com
--> Link: https://www.linkedin.com/in/mauro-c%C3%A9sar-guimaraes-santos-junior-b9638b203/
+ Mauroguima080@hotmail.com
+| Link: https://www.linkedin.com/in/mauro-c%C3%A9sar-guimaraes-santos-junior-b9638b203/
 
 ## 📝 Licença
 Este projeto está licenciado sob a MIT License.
