@@ -60,9 +60,9 @@ npm install
 ---
 👤 Autor
 Mauro César Guimarães Santos Junior
-🔧 Analista de Sistemas e Infra 
-👨‍💻 Dev Fullstack
-🚀 Apaixonado por tecnologia
+-> 🔧 Analista de Sistemas e Infra 
+-> 👨‍💻 Dev Fullstack
+-> 🚀 Apaixonado por tecnologia
 
 -> Mauroguima080@hotmail.com
 -> Link: https://www.linkedin.com/in/mauro-c%C3%A9sar-guimaraes-santos-junior-b9638b203/
