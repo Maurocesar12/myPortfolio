@@ -8,13 +8,26 @@ const Navigation = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
+ let lastScrollTop = window.scrollY;
 
+  const handleScroll = () => {
+    const currentScrollTop = window.scrollY;
+    setIsScrolled(currentScrollTop > 50);
+
+    // Fecha o menu mobile somente se estiver rolando para baixo e no modo mobile
+    if (
+      isMobileMenuOpen &&
+      window.innerWidth < 1024 &&
+      currentScrollTop > lastScrollTop
+    ) {
+      setIsMobileMenuOpen(false);
+    }
+
+    lastScrollTop = currentScrollTop;
+  };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [isMobileMenuOpen]);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -96,9 +109,9 @@ const Navigation = () => {
                 aria-expanded={isMobileMenuOpen}
               >
                 <div className="w-6 h-6 relative">
-                  <span className={`absolute left-0 top-1 w-6 h-0.5 bg-current transition-all duration-300 ${isMobileMenuOpen ? 'rotate-45 top-0.5' : ''}`}></span>
+                  <span className={`absolute left-0 top-1 w-6 h-0.5 bg-current transition-all duration-300 ${isMobileMenuOpen ? 'rotate-45 top-4' : ''}`}></span>
                   <span className={`absolute left-0 top-2.5 w-6 h-0.5 bg-current transition-all duration-300 ${isMobileMenuOpen ? 'opacity-0' : ''}`}></span>
-                  <span className={`absolute left-0 top-4 w-6 h-0.5 bg-current transition-all duration-300 ${isMobileMenuOpen ? '-rotate-45 top-0.5' : ''}`}></span>
+                  <span className={`absolute left-0 top-4 w-6 h-0.5 bg-current transition-all duration-300 ${isMobileMenuOpen ? '-rotate-45 top-4' : ''}`}></span>
                 </div>
               </button>
             </div>
