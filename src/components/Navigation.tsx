@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import pdf from '/public/MauroCésarGuimaraes.pdf';
+import logo from './image/logo-atualizada.png';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -59,10 +60,13 @@ const Navigation = () => {
             <div className="flex-shrink-0">
               <button
                 onClick={() => scrollToSection('hero')}
-                className="text-green font-mono text-lg lg:text-xl font-bold glow hover:scale-105 transition-transform duration-300 focus:outline-none focus:ring-2 focus:ring-green focus:ring-offset-2 focus:ring-offset-dark-navy"
+                className="text-green font-mono text-lg lg:text-xl font-bold glow hover:scale-50 transition-transform duration-500 focus:outline-none focus:ring-2 focus:ring-green focus:ring-offset-2 focus:ring-offset-dark-navy"
                 aria-label="Voltar ao início"
               >
-                M
+                <img
+                className='w-28 h-auto mx-auto object-contain' 
+                src={logo}
+                alt="logo atualizada" />
               </button>
             </div>
             
