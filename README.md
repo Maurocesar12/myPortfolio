@@ -63,9 +63,12 @@ npm install
 👨‍💻 Dev Fullstack
 🚀 Apaixonado por tecnologia
 ```
+---
+```
+💻Contato
 
 Email: Mauroguima080@hotmail.com
 Link: https://www.linkedin.com/in/mauro-c%C3%A9sar-guimaraes-santos-junior-b9638b203/
-
+```
 ## 📝 Licença
 Este projeto está licenciado sob a MIT License.
