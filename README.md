@@ -21,7 +21,7 @@ Este projeto foi criado com foco em performance, design moderno e usabilidade, u
 ---
 
 ## 📁 Estrutura do Projeto
-
+```
 myPortfolio/
 ├── public/
 │ └── MauroCésarGuimaraes.pdf # Currículo profissional
@@ -35,8 +35,7 @@ myPortfolio/
 ├── tailwind.config.ts # Configurações Tailwind
 ├── tsconfig.json # Configurações TypeScript
 └── vite.config.ts # Configuração do Vite
-
-
+```
 ---
 
 ## 🧭 Funcionalidades
