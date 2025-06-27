@@ -57,8 +57,7 @@ cd myPortfolio
 npm install
 ```
 ---
-👤 Autor
- Mauro César Guimarães Santos Junior
+👤 Mauro César Guimarães Santos Junior
  ```
 🔧 Analista de Sistemas e Infra 
 👨‍💻 Dev Fullstack
