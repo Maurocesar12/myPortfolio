@@ -66,7 +66,11 @@ const Navigation = () => {
                 <img
                 className='w-28 h-auto mx-auto object-contain' 
                 src={logo}
-                alt="logo atualizada" />
+                alt="logo atualizada"
+                fetchPriority="high"
+                decoding="async"
+                loading="eager"
+                 />
               </button>
             </div>
             
