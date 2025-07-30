@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import pdf from '/public/MauroCésarGuimaraes.pdf';
-import logo from './image/logo-atualizada.png';
+import logo from './image/logo-atualizada.webp';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
