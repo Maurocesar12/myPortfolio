@@ -19,7 +19,7 @@ const ProjectsSection = () => {
     {
       title: 'IT QuickTools',
       description: 'Ferramenta de automação de suporte técnico desenvolvida em C# (Windows Forms / .NET 8). O projeto utiliza WMI para leitura de hardware, gerenciamento de Processos para execução de comandos CMD/PowerShell em background e Programação Assíncrona (Async/Await) para garantir uma interface responsiva. Compilada como Single-File (Autocontida), roda diretamente de um Pen Drive sem necessidade de instalação ou dependências externas.',
-      technologies: ['C#', 'WindowsForm', '.NET8',],
+      technologies: ['C#', 'CMD/PoweShell', '.NET8',],
       github: 'https://github.com/Maurocesar12/QuickTools_Project',
       demo: 'https://github.com/Maurocesar12/QuickTools_Project/releases/tag/v1.0',
       image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop',
