@@ -81,9 +81,8 @@ const AboutSection = () => {
                 Minha experiência inclui trabalhar com tecnologias modernas como Vercel, React, Node.js, Python, JavaScript, TypeScript 
                 sempre buscando as melhores práticas em <span className="text-green font-medium">DevOps</span> e 
                 <span className="text-green font-medium"> arquitetura de sistemas distribuídos</span>. 
-                Tenho particular interesse em desenvolvimento web, automação, segurança e otimização de performance.
+                Tenho particular interesse em desenvolvimento de Software.
               </p>
-              
               <p>
                 Aqui estão algumas das principais tecnologias com as quais trabalho atualmente:
               </p>
