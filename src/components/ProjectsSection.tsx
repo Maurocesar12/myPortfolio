@@ -9,10 +9,10 @@ const ProjectsSection = () => {
   const projects = [
     {
       title: 'Integrated Chat Bot AI',
-      description: 'Chatbot para WhatsApp com inteligência artificial, feito em Node.js. Ele usa OpenAI (GPT) ou Google Gemini para responder automaticamente mensagens de amigos, colegas ou transformar uma assistente virtual para sua empresa.',
+      description: 'Chatbot para WhatsApp que utiliza inteligência artificial, feito em Node.js. Ele usa OpenAI (GPT) ou Google Gemini para responder automaticamente mensagens de amigos, colegas ou transformar uma assistente virtual para sua empresa.',
       technologies: ['JavaScript', 'TypeScript', 'Node.js', 'WpConnect',],
       github: 'https://github.com/Maurocesar12/ChatBot-integrando-com-IA',
-      demo: '',
+      demo: 'https://virtualassisente.netlify.app',
       image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop',
       featured: true
     },
