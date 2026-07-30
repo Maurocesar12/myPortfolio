@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import pdf from '/public/MauroCésarGuimaraes.pdf';
+import pdf from '/public/Curriculo_Mauro_Cesar_Guimaraes2026.pdf';
 import logo from './image/logo-atualizada.webp';
 
 const Navigation = () => {
@@ -99,7 +99,7 @@ const Navigation = () => {
                onClick={() => {
                 const link = document.createElement('a')
                 link.href = pdf;
-                link.download ='MauroCésarGuimaraes.pdf'
+                link.download ='Curriculo_Mauro_Cesar_Guimaraes2026.pdf'
                 link.click();
               }}
                 aria-label="Baixar currículo em PDF"
@@ -159,7 +159,7 @@ const Navigation = () => {
               onClick={() => {
                 const link = document.createElement('a')
                 link.href = pdf;
-                link.download ='MauroCésarGuimaraes.pdf'
+                link.download ='Curriculo_Mauro_Cesar_Guimaraes2026.pdf'
                 link.click();
               }}
             >
