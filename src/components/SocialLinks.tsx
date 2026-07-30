@@ -20,7 +20,7 @@ const SocialLinks = () => {
           </a>
           
           <a 
-            href="https://www.linkedin.com/in/mauroguimar%C3%A3es/" 
+            href="https://www.linkedin.com/in/mauroguimar%C3%A3es/"
             target="_blank" 
             rel="noopener noreferrer"
             className="text-slate hover:text-green hover:-translate-y-1 transition-all duration-200"
