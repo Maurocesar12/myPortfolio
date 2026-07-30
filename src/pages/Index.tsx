@@ -1,5 +1,6 @@
 
 import Navigation from '@/components/Navigation';
+import CursorGlow from '@/components/CursorGlow';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import ExperienceSection from '@/components/ExperienceSection';
@@ -11,6 +12,7 @@ import SocialLinks from '@/components/SocialLinks';
 const Index = () => {
   return (
     <div className="min-h-screen bg-dark-navy">
+      <CursorGlow />
       <Navigation />
       <SocialLinks />
       
