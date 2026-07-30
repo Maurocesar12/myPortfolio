@@ -68,7 +68,7 @@ npm install
 💻Contato
 
 Email: Mauroguima080@hotmail.com
-Link: https://www.linkedin.com/in/mauro-c%C3%A9sar-guimaraes-santos-junior-b9638b203/
+Link: https://www.linkedin.com/in/mauroguimar%C3%A3es/
 ```
 ## 📝 Licença
 Este projeto está licenciado sob a MIT License.

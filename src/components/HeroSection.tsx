@@ -75,7 +75,7 @@ const HeroSection = () => {
             <Button 
               variant="ghost"
               onClick={() => {
-                window.open('https://www.linkedin.com/in/mauro-c%C3%A9sar-guimaraes-santos-junior-b9638b203/')
+                window.open('https://www.linkedin.com/in/mauroguimar%C3%A3es/')
               }}
               className="btn-animated text-lightest-slate hover:text-green font-mono text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 h-auto border border-transparent hover:border-green/30"
               aria-label="Saber mais sobre mim"
