@@ -26,11 +26,11 @@ const ProjectsSection = () => {
       featured: true
     },
     {
-      title: 'LandinPage for marketing professionals ',
-      description: 'Landing page criada para destacar o trabalho de uma profissional de marketing. Moderna, responsiva e feita com tecnologias como React, TypeScript e Tailwind, unindo design e performance em um só lugar.',
-      technologies: ['React', 'TypeScript', 'TalwindCSS', 'Vite', 'Vercel', 'JavaScript'],
-      github: 'https://github.com/Maurocesar12/marketing-muse-landing-main',
-      demo: 'https://glendacarvalho.com.br/',
+      title: 'Desenvolvimento de Sistema de gestão para empresas ',
+      description: 'Sistema web desenvolvido para gestão de empresas, com funcionalidades de controle de estoque, vendas, clientes e relatórios. O sistema foi desenvolvido utilizando React, TypeScript e TailwindCSS, garantindo uma interface moderna e responsiva. O backend foi implementado com Node.js e Express, utilizando um banco de dados relacional para armazenamento das informações.',
+      technologies: ['React', 'TypeScript', 'TalwindCSS', 'Next.js', 'Vercel', 'JavaScript', 'node.js', 'Express', 'PostgreSQL'],
+      github: 'https://github.com/Maurocesar12/System_GestaoEmpresarial',
+      demo: 'em desenvolvimento',
       image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop',
       featured: true
     }
