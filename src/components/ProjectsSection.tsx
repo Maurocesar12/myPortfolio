@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, Github } from 'lucide-react';
+import { image-zapiens } from './image/ZAPIENS.jpg'
 
 type Project = {
   title: string;
@@ -23,7 +24,7 @@ const ProjectsSection = () => {
       technologies: ['JavaScript', 'TypeScript', 'Node.js', 'WpConnect'],
       github: 'https://github.com/Maurocesar12/ChatBot-integrando-com-IA',
       demo: 'https://zapiens.netlify.app/',
-      image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop',
+      image: <image-zapiens></image-zapiens>,
       label: 'Projeto em Destaque'
     },
     {
