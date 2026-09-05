@@ -1,7 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, Github } from 'lucide-react';
-import { image-zapiens } from './image/ZAPIENS.jpg'
+import imageZapiens from './image/ZAPIENS.jpg';
+import imageQuickTools from './image/QuickTools.jpg';
+import imageGestaoEmpresarial from './image/GestaoEmpresarial.jpg';
 
 type Project = {
   title: string;
@@ -24,7 +26,7 @@ const ProjectsSection = () => {
       technologies: ['JavaScript', 'TypeScript', 'Node.js', 'WpConnect'],
       github: 'https://github.com/Maurocesar12/ChatBot-integrando-com-IA',
       demo: 'https://zapiens.netlify.app/',
-      image: <image-zapiens></image-zapiens>,
+      image: imageZapiens,
       label: 'Projeto em Destaque'
     },
     {
@@ -33,7 +35,7 @@ const ProjectsSection = () => {
       technologies: ['C#', 'CMD/PowerShell', '.NET 8'],
       github: 'https://github.com/Maurocesar12/QuickTools_Project',
       demo: 'https://github.com/Maurocesar12/QuickTools_Project/releases/tag/v1.0',
-      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop',
+      image: imageQuickTools,
       label: 'Projeto em Destaque'
     },
     {
@@ -41,7 +43,8 @@ const ProjectsSection = () => {
       description: 'Sistema web desenvolvido para gestão de empresas, com funcionalidades de controle de estoque, vendas, clientes e relatórios. A interface foi construída com React, TypeScript e TailwindCSS, enquanto o backend utiliza Node.js, Express e banco relacional para armazenamento das informações.',
       technologies: ['React', 'TypeScript', 'TailwindCSS', 'Next.js', 'Node.js', 'Express', 'PostgreSQL'],
       github: 'https://github.com/Maurocesar12/System_GestaoEmpresarial',
-      image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop',
+      demo:  'https://gestao-empresarial-web.vercel.app/',
+      image: imageGestaoEmpresarial,
       label: 'Projeto em Destaque'
     },
     {
