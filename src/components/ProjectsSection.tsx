@@ -2,8 +2,9 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, Github } from 'lucide-react';
 import imageZapiens from './image/ZAPIENS.jpg';
-import imageQuickTools from './image/QuickTools.jpg';
+import imageQuickTools from './image/Quicktools 2.png';
 import imageGestaoEmpresarial from './image/Sistema De Gestao FInanceira.jpg';
+import areaRestritaImage from './image/amvar.jpg';
 
 type Project = {
   title: string;
@@ -53,14 +54,15 @@ const ProjectsSection = () => {
       technologies: ['HTML', 'CSS', 'JavaScript', 'Responsivo', 'Landing Page'],
       github: 'https://github.com/Maurocesar12/LandingPage_Nutricionista',
       image: 'https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&h=400&fit=crop',
+      demo: 'https://arletenutricionista.com.br/',
       label: 'Projeto Realizado'
     },
     {
-      title: 'Site Segna Consultoria em Seguros',
-      description: 'Site institucional desenvolvido e mantido em WordPress para apresentar soluções de seguros, consórcios, atendimento, blog e canais de contato. O trabalho envolve personalização de páginas, ajustes de performance, organização de conteúdo e manutenção contínua para melhorar a experiência dos clientes.',
+      title: 'Área Restrita de Colaboradores',
+      description: 'Realizei a configuração e o desenvolvimento de uma área restrita para colaboradores em um site WordPress, utilizando o desenvolvimento com PHP e plugin Elementor.Implementei funçoes no SQL. A área foi projetada para fornecer acesso seguro a informações internas, documentos e recursos exclusivos para os funcionários da empresa. Além de fornercer todo amparo de mudança de hospedagem e atualizaçoes de segurança do site.',
       technologies: ['WordPress', 'PHP', 'Elementor', 'CSS', 'Performance', 'Cloudflare'],
-      demo: 'https://www.segna.com.br/',
-      image: 'https://www.segna.com.br/wp-content/uploads/2021/09/10624-1-1024x870.png',
+      demo: 'https://amvvar.org.br/area-restrita/',
+      image: areaRestritaImage,
       label: 'Projeto Realizado'
     }
   ];
@@ -113,7 +115,7 @@ const ProjectsSection = () => {
                     className="w-full h-64 sm:h-72 lg:h-80 xl:h-96 object-cover transition-all duration-500 group-hover:scale-105"
                     loading="lazy"
                   />
-                  <div className="absolute inset-0 bg-green/20 transition-opacity duration-300 group-hover:opacity-0" />
+                  <div className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0" />
 
                   <div className="absolute inset-0 bg-dark-navy/80 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center justify-center">
                     <div className="flex gap-4">
@@ -121,7 +123,7 @@ const ProjectsSection = () => {
                         <Button
                           variant="ghost"
                           size="sm"
-                          className="text-green hover:text-lightest-slate hover:bg-green/20 p-3"
+                          className="text-green hover:text-lightest-slate p-3"
                           onClick={() => openUrl(project.github)}
                           aria-label={`Ver código do projeto ${project.title} no GitHub`}
                         >
@@ -133,7 +135,7 @@ const ProjectsSection = () => {
                         <Button
                           variant="ghost"
                           size="sm"
-                          className="text-green hover:text-lightest-slate hover:bg-green/20 p-3"
+                          className="text-green hover:text-lightest-slate p-3"
                           onClick={() => openUrl(project.demo)}
                           aria-label={`Ver demo do projeto ${project.title}`}
                         >
