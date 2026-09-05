@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import { ExternalLink, Github } from 'lucide-react';
 import imageZapiens from './image/ZAPIENS.jpg';
 import imageQuickTools from './image/QuickTools.jpg';
-import imageGestaoEmpresarial from './image/GestaoEmpresarial.jpg';
+import imageGestaoEmpresarial from './image/Sistema De Gestao FInanceira.jpg';
 
 type Project = {
   title: string;
