@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, Github } from 'lucide-react';
 import imageZapiens from './image/ZAPIENS.jpg';
-import imageQuickTools from './image/quicktools 3.jpg';
+import imageQuickTools from './image/quicktools.jpg';
 import imageGestaoEmpresarial from './image/Sistema De Gestao FInanceira.jpg';
 import areaRestritaImage from './image/amvar.jpg';
 
@@ -112,7 +112,7 @@ const ProjectsSection = () => {
                   <img
                     src={project.image}
                     alt={`Screenshot do projeto ${project.title}`}
-                    className="w-full h-64 sm:h-72 lg:h-80 xl:h-96 object-cover transition-all duration-500 group-hover:scale-150"
+                    className="w-full h-64 sm:h-72 lg:h-80 xl:h-96 object-cover transition-all duration-500 group-hover:scale-90"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0" />
