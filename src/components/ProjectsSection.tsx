@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, Github } from 'lucide-react';
 import imageZapiens from './image/ZAPIENS.jpg';
-import imageQuickTools from './image/Quicktools 2.png';
+import imageQuickTools from './image/quicktools 3.jpg';
 import imageGestaoEmpresarial from './image/Sistema De Gestao FInanceira.jpg';
 import areaRestritaImage from './image/amvar.jpg';
 
