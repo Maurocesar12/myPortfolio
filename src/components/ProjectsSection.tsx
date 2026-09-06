@@ -112,7 +112,7 @@ const ProjectsSection = () => {
                   <img
                     src={project.image}
                     alt={`Screenshot do projeto ${project.title}`}
-                    className="w-full h-64 sm:h-72 lg:h-80 xl:h-96 object-cover transition-all duration-500 group-hover:scale-105"
+                    className="w-full h-64 sm:h-72 lg:h-80 xl:h-96 object-cover transition-all duration-500 group-hover:scale-150"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0" />
