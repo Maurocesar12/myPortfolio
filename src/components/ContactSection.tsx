@@ -64,7 +64,7 @@ const ContactSection = () => {
         
         <div className="text-center">
           <p className="font-mono text-slate text-sm">
-            Desenvolvido por Mauro César Guimarães Santos Junior
+            Desenvolvido por Mauro Guimarães
           </p>
         </div>
       </div>
