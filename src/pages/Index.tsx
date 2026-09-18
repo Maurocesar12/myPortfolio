@@ -1,6 +1,6 @@
 
 import Navigation from '@/components/Navigation';
-import CursorGlow from '@/components/CursorGlow';
+import BackgroundFX from '@/components/BackgroundFX';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import ExperienceSection from '@/components/ExperienceSection';
@@ -11,11 +11,13 @@ import SocialLinks from '@/components/SocialLinks';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-dark-navy">
-      <CursorGlow />
+    // Sem cor de fundo aqui: o bg-dark-navy do body é a base e deixa o
+    // BackgroundFX (z negativo) visível.
+    <div className="min-h-screen">
+      <BackgroundFX />
       <Navigation />
       <SocialLinks />
-      
+
       <main className="relative z-10">
         <HeroSection />
         <AboutSection />
@@ -24,12 +26,6 @@ const Index = () => {
         <SkillsSection />
         <ContactSection />
       </main>
-      
-      {/* Background decorations */}
-      <div className="fixed inset-0 pointer-events-none overflow-hidden -z-10">
-        <div className="absolute top-1/4 left-10 w-72 h-72 bg-green/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 right-10 w-96 h-96 bg-green/3 rounded-full blur-3xl"></div>
-      </div>
     </div>
   );
 };

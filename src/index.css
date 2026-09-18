@@ -232,6 +232,22 @@
     }
   }
 
+  /* Auroras do fundo: deriva lenta e contínua */
+  @keyframes aurora-a {
+    0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+    50% { transform: translate3d(8%, 6%, 0) scale(1.15); }
+  }
+
+  @keyframes aurora-b {
+    0%, 100% { transform: translate3d(0, 0, 0) scale(1.05); }
+    50% { transform: translate3d(-10%, -8%, 0) scale(0.95); }
+  }
+
+  @keyframes aurora-c {
+    0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+    50% { transform: translate3d(7%, -9%, 0) scale(1.12); }
+  }
+
   /* Staggered animations */
   .stagger-1 { animation-delay: 0.1s; }
   .stagger-2 { animation-delay: 0.2s; }

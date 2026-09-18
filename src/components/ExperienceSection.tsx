@@ -37,11 +37,11 @@ const ExperienceSection = () => {
   ];
 
   return (
-    <section id="experience" className="max-w-4xl mx-auto px-6">
+    <section id="experience" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="animate-fade-in">
         <h2 className="numbered-heading">Onde trabalhei</h2>
-        
-        <div className="flex flex-col md:flex-row gap-8">
+
+        <div className="flex flex-col md:flex-row gap-8 max-w-4xl">
           <div className="md:w-1/3">
             <div className="flex md:flex-col overflow-x-auto md:overflow-visible">
               {experiences.map((exp, index) => (

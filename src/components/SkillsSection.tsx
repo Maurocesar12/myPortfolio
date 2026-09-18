@@ -62,7 +62,7 @@ const SkillsSection = () => {
   ];
 
   return (
-    <section id="skills" className="max-w-6xl mx-auto px-6">
+    <section id="skills" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="animate-fade-in">
         <h2 className="numbered-heading">Habilidades Técnicas</h2>
         

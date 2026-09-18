@@ -27,10 +27,7 @@ const HeroSection = () => {
       id="hero"
       className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 relative overflow-hidden"
     >
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-green/5 via-transparent to-green/5 opacity-50"></div>
-      
-      <div className="max-w-6xl mx-auto relative z-10">
+      <div className="max-w-6xl mx-auto w-full relative z-10">
         <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           {/* Greeting */}
           <p className="font-mono text-green text-sm sm:text-base md:text-lg mb-4 sm:mb-6 fade-in-up stagger-1">
@@ -92,10 +89,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      
-      {/* Floating decoration */}
-      <div className="absolute top-1/4 right-1/4 w-2 h-2 bg-green rounded-full floating opacity-60 hidden lg:block"></div>
-      <div className="absolute bottom-1/3 left-1/4 w-1 h-1 bg-green rounded-full floating opacity-40 hidden lg:block" style={{ animationDelay: '2s' }}></div>
     </section>
   );
 };

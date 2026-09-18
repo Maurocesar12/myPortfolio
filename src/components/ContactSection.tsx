@@ -4,8 +4,8 @@ import { Button } from '@/components/ui/button';
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="max-w-2xl mx-auto px-6 text-center">
-      <div className="animate-fade-in">
+    <section id="contact" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="animate-fade-in max-w-2xl mx-auto">
         <h2 className="font-mono text-green text-base md:text-lg mb-5">
           05. E agora?
         </h2>
