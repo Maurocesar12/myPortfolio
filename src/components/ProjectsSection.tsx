@@ -31,6 +31,7 @@ const ProjectsSection = () => {
       github: 'https://github.com/Maurocesar12/ChatBot-integrando-com-IA',
       demo: 'https://zapiens.netlify.app/',
       image: imageZapiens,
+      video: '/videos/zapiens.mp4',
       label: 'Projeto em Destaque'
     },
     {
@@ -49,6 +50,7 @@ const ProjectsSection = () => {
       github: 'https://github.com/Maurocesar12/System_GestaoEmpresarial',
       demo:  'https://gestao-empresarial-web.vercel.app/',
       image: imageGestaoEmpresarial,
+      video: '/videos/gestao-empresarial.mp4',
       label: 'Projeto em Destaque'
     },
     {
@@ -93,14 +95,13 @@ const ProjectsSection = () => {
     return () => observer.disconnect();
   }, []);
 
-  // Só roda o vídeo enquanto o card está na tela: evita 5 vídeos decodificando
-  // ao mesmo tempo. Sob "reduzir movimento" nada toca e o poster fica visível.
+  // Só roda o vídeo enquanto o card está na tela, para não deixar vários
+  // decodificando ao mesmo tempo.
   useEffect(() => {
     const videos = videoRefs.current.filter(
       (video): video is HTMLVideoElement => video !== null
     );
     if (!videos.length) return;
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
     const observer = new IntersectionObserver(
       (entries) => {
