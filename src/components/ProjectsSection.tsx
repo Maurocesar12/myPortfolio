@@ -139,8 +139,8 @@ const ProjectsSection = () => {
                 index % 2 === 1 ? 'lg:flex-row-reverse' : 'lg:flex-row'
               } gap-8 lg:gap-12 items-center fade-in-up stagger-${index + 1}`}
             >
-              <div className="w-full lg:w-3/5 relative group">
-                <div className="relative overflow-hidden rounded-xl">
+              <div className="w-full lg:w-3/5">
+                <div className="overflow-hidden rounded-xl">
                   {project.video ? (
                     <video
                       ref={(el) => {
@@ -153,45 +153,16 @@ const ProjectsSection = () => {
                       playsInline
                       preload="metadata"
                       aria-label={`Demonstração do projeto ${project.title}`}
-                      className="w-full h-64 sm:h-72 lg:h-80 xl:h-96 object-cover transition-all duration-1000 ease-out group-hover:scale-90"
+                      className="w-full h-64 sm:h-72 lg:h-80 xl:h-96 object-cover"
                     />
                   ) : (
                     <img
                       src={project.image}
                       alt={`Screenshot do projeto ${project.title}`}
-                      className="w-full h-64 sm:h-72 lg:h-80 xl:h-96 object-cover transition-all duration-1000 ease-out group-hover:scale-90"
+                      className="w-full h-64 sm:h-72 lg:h-80 xl:h-96 object-cover"
                       loading="lazy"
                     />
                   )}
-                  <div className="absolute inset-0 transition-opacity duration-700 ease-out group-hover:opacity-0" />
-
-                  <div className="absolute inset-0 bg-dark-navy/80 opacity-0 transition-opacity duration-700 ease-out group-hover:opacity-100 flex items-center justify-center">
-                    <div className="flex gap-4">
-                      {project.github && (
-                        <Button
-                          variant="ghost"
-                          size="sm"
-                          className="text-green hover:text-lightest-slate p-3"
-                          onClick={() => openUrl(project.github)}
-                          aria-label={`Ver código do projeto ${project.title} no GitHub`}
-                        >
-                          <Github className="h-6 w-6" />
-                        </Button>
-                      )}
-
-                      {project.demo && (
-                        <Button
-                          variant="ghost"
-                          size="sm"
-                          className="text-green hover:text-lightest-slate p-3"
-                          onClick={() => openUrl(project.demo)}
-                          aria-label={`Ver demo do projeto ${project.title}`}
-                        >
-                          <ExternalLink className="h-6 w-6" />
-                        </Button>
-                      )}
-                    </div>
-                  </div>
                 </div>
               </div>
 
