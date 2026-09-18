@@ -153,19 +153,19 @@ const ProjectsSection = () => {
                       playsInline
                       preload="metadata"
                       aria-label={`Demonstração do projeto ${project.title}`}
-                      className="w-full h-64 sm:h-72 lg:h-80 xl:h-96 object-cover transition-all duration-500 group-hover:scale-90"
+                      className="w-full h-64 sm:h-72 lg:h-80 xl:h-96 object-cover transition-all duration-1000 ease-out group-hover:scale-90"
                     />
                   ) : (
                     <img
                       src={project.image}
                       alt={`Screenshot do projeto ${project.title}`}
-                      className="w-full h-64 sm:h-72 lg:h-80 xl:h-96 object-cover transition-all duration-500 group-hover:scale-90"
+                      className="w-full h-64 sm:h-72 lg:h-80 xl:h-96 object-cover transition-all duration-1000 ease-out group-hover:scale-90"
                       loading="lazy"
                     />
                   )}
-                  <div className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0" />
+                  <div className="absolute inset-0 transition-opacity duration-700 ease-out group-hover:opacity-0" />
 
-                  <div className="absolute inset-0 bg-dark-navy/80 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center justify-center">
+                  <div className="absolute inset-0 bg-dark-navy/80 opacity-0 transition-opacity duration-700 ease-out group-hover:opacity-100 flex items-center justify-center">
                     <div className="flex gap-4">
                       {project.github && (
                         <Button
