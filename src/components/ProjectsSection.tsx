@@ -13,12 +13,15 @@ type Project = {
   github?: string;
   demo?: string;
   image: string;
+  /** MP4 em loop mostrando o projeto; a imagem vira o poster. */
+  video?: string;
   label?: string;
 };
 
 const ProjectsSection = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
+  const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
 
   const projects: Project[] = [
     {
@@ -90,6 +93,34 @@ const ProjectsSection = () => {
     return () => observer.disconnect();
   }, []);
 
+  // Só roda o vídeo enquanto o card está na tela: evita 5 vídeos decodificando
+  // ao mesmo tempo. Sob "reduzir movimento" nada toca e o poster fica visível.
+  useEffect(() => {
+    const videos = videoRefs.current.filter(
+      (video): video is HTMLVideoElement => video !== null
+    );
+    if (!videos.length) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const video = entry.target as HTMLVideoElement;
+          if (entry.isIntersecting) {
+            // O navegador pode recusar o autoplay; nesse caso fica o poster.
+            video.play().catch(() => undefined);
+          } else {
+            video.pause();
+          }
+        });
+      },
+      { threshold: 0.25 }
+    );
+
+    videos.forEach((video) => observer.observe(video));
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section
       id="projects"
@@ -109,12 +140,28 @@ const ProjectsSection = () => {
             >
               <div className="w-full lg:w-3/5 relative group">
                 <div className="relative overflow-hidden rounded-xl">
-                  <img
-                    src={project.image}
-                    alt={`Screenshot do projeto ${project.title}`}
-                    className="w-full h-64 sm:h-72 lg:h-80 xl:h-96 object-cover transition-all duration-500 group-hover:scale-90"
-                    loading="lazy"
-                  />
+                  {project.video ? (
+                    <video
+                      ref={(el) => {
+                        videoRefs.current[index] = el;
+                      }}
+                      src={project.video}
+                      poster={project.image}
+                      muted
+                      loop
+                      playsInline
+                      preload="metadata"
+                      aria-label={`Demonstração do projeto ${project.title}`}
+                      className="w-full h-64 sm:h-72 lg:h-80 xl:h-96 object-cover transition-all duration-500 group-hover:scale-90"
+                    />
+                  ) : (
+                    <img
+                      src={project.image}
+                      alt={`Screenshot do projeto ${project.title}`}
+                      className="w-full h-64 sm:h-72 lg:h-80 xl:h-96 object-cover transition-all duration-500 group-hover:scale-90"
+                      loading="lazy"
+                    />
+                  )}
                   <div className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0" />
 
                   <div className="absolute inset-0 bg-dark-navy/80 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center justify-center">
